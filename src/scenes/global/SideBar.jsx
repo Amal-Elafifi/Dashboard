@@ -104,7 +104,7 @@ const SideBar = () => {
                  }}>
                 Eddie
               </Typography>
-              <Typography variant="h6" color={colors.greenAccent[600]}>
+              <Typography variant="h6" color={colors.greenAccent[500]}>
                 VP Fancy Admin
               </Typography>
             </Box>
