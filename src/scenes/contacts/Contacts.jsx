@@ -13,14 +13,14 @@ const Contacts= () => {
   const colors = tokens(theme.palette.mode)
   const columns= [
     {field: "id", headerName: "ID"},
-    {field: "registrarId", fieldName: "RegistrarID", type: "number", headerAlign: "left", align: "left"},
-    {field: "name", fieldName: "Name", flex:1, cellClassName: "name-column--cell"},
-    {field: "age", fieldName: "Age", type: "number", headerAlign: "left", align: "left"},
-    {field: "email", fieldName: "Email", flex: 1},
-    {field: "address", fieldName: "Address", flex: 1},
-    {field: "phone", fieldName: "phoneNumber", flex: 1},
-    {field: "city", fieldName: "City", flex: 1},
-    {field: "zipCode", fieldName: "ZipCode", flex: 1}  
+    {field: "registrarId", headerName: "RegistrarID", type: "number", headerAlign: "left", align: "left"},
+    {field: "name", headerName: "Name", flex:1, cellClassName: "name-column--cell"},
+    {field: "age", headerName: "Age", type: "number", headerAlign: "left", align: "left"},
+    {field: "email", headerName: "Email", flex: 1},
+    {field: "address", headerName: "Address", flex: 1},
+    {field: "phone", headerName: "phoneNumber", flex: 1},
+    {field: "city", headerName: "City", flex: 1},
+    {field: "zipCode", headerName: "ZipCode", flex: 1}  
   ]
   return (
     <Box sx={{m: "20px"}}>
