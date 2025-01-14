@@ -19,8 +19,9 @@ const Team= () => {
   const columns= [
     {field: "id", headerName: "ID"},
     {field: "name", fieldName: "Name", flex:1, cellClassName: "name-column--cell"},
-    {field: "age", fieldName: "Age", type: "number", headeraAlign: "left", align: "left"},
+    {field: "age", fieldName: "Age", type: "number", headerAlign: "left", align: "left"},
     {field: "email", fieldName: "Email", flex: 1},
+    {field: "address", fieldName: "Address", flex: 1},
     {field: "phone", fieldName: "phoneNumber", flex: 1},
     {filed: "access", fieldName: "AccessLevel", flex: 1, 
       renderCell: ({ row: {access}}) => {
