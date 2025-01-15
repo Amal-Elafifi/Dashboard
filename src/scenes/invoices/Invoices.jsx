@@ -1,7 +1,6 @@
-import { useTheme } from "@emotion/react";
 import Header  from "../../components/Header";
 import { tokens } from "../global";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import { DataGrid} from '@mui/x-data-grid';
 import { mockDataInvoices } from "../../data/mockData";
 
@@ -16,9 +15,9 @@ const Invoices= () => {
     {field: "name", headerName: "Name", flex:1, cellClassName: "name-column--cell"},
     {field: "phone", headerName: "PhoneNumber", flex: 1},
     {field: "email", headerName: "Email", flex: 1},
-    {field: "cost", headerName: "Cost",
-      rendercell: (params) => (
-        <Typography sx={{color: colors.greenAccent[500]}}>
+    {field: "cost", headerName: "Cost", flex: 1, align: "left",
+      renderCell: (params) => (
+        <Typography sx={{color: colors.greenAccent[500], lineHeight: "3.5", fontSize: "0.85rem"}}>
           {params.row.cost}
         </Typography>
       ),
