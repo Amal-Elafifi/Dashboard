@@ -6,7 +6,7 @@ import Bar from "./scenes/bar/Bar";
 import Calender from "./scenes/calender/Calender";
 import Contacts from "./scenes/contacts/Contacts";
 import FAQ from "./scenes/faq/FAQ";
-import Form from "./scenes/form/Form";
+import FormInformation from "./scenes/form/Form";
 import Geography from "./scenes/geography/Geography";
 import Invoices from "./scenes/invoices/Invoices";
 import Line from "./scenes/line/Line";
@@ -23,7 +23,7 @@ export {
   Calender,
   Contacts,
   FAQ,
-  Form,
+  FormInformation,
   Geography,
   Invoices,
   Line,

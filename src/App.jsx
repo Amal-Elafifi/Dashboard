@@ -9,7 +9,7 @@ import {
   Calender,
   Contacts,
   FAQ,
-  Form,
+  FormInformation,
   Geography,
   Invoices,
   Line,
@@ -35,7 +35,7 @@ const App = () => {
               <Route path="/calender" element={<Calender/>}/>
               <Route path="/contacts" element={<Contacts/>}/>
               <Route path="/faq" element={<FAQ/>}/>
-              <Route path="/form" element={<Form/>}/>
+              <Route path="/form" element={<FormInformation/>}/>
               <Route path="/geography" element={<Geography/>}/>
               <Route path="/invoices" element={<Invoices/>}/>
               <Route path="/line" element={<Line/>}/>
