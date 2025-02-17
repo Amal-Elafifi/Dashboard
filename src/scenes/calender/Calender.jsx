@@ -21,7 +21,6 @@ const Calender= () => {
   function handleDateClick (selected) {
     const title = prompt("Enter Title For Your Event");
     const calendarApi = selected.view.calendar;
-    console.log(selected);
     calendarApi.unselect();
 
     if(title){
@@ -92,12 +91,11 @@ const Calender= () => {
               timeGridPlugin ,
               listPlugin,
               interactionPlugin,
-              listPlugin
             ]}
             headerToolbar={{
               left: "prev today next",
               center: "title",
-              right: " dayGridMonth, timeGridWeek, timeGridDay, listMonth"
+              right: " dayGridMonth,timeGridWeek,timeGridDay,listMonth"
             }}
             initialView='dayGridMonth'
             editable={true}
