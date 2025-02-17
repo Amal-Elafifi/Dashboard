@@ -33,6 +33,7 @@ const FormInformation= () => {
 
   const handleFormSubmit = (values) => {
     console.log(values)
+    notify()
   }
 
   return (
@@ -137,7 +138,7 @@ const FormInformation= () => {
                 </TextField>      
             </Box>
             <Box sx={{display: "flex", justifyContent: "end", mt: "20px"}}>
-              <Button onClick={notify} color="secondary" variant="contained" type="submit" sx={{ color: "#292929", fontWeight: "bold"}} >
+              <Button  color="secondary" variant="contained" type="submit" sx={{ color: "#292929", fontWeight: "bold"}} >
                 Create New User
               </Button>
             </Box>
